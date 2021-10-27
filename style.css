@@ -1,0 +1,144 @@
+/* Choose a nice color and font-family for headers (<h1>, <h2>, <h3>)
+Choose harmonious font-size and line-height for headers */
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+body {
+  font-family: 'Gilda Display', serif;
+  background-color: rgb(167, 172, 173);
+  color: #f3e3e0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 100px;
+
+}
+
+#know_btn{
+  background-color:#f3e3e0;
+  color: #506369;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 0;
+}
+#know_btn > a{
+  color: #506369;
+}
+
+#know_btn:hover{
+  background-color:#eeccc6;
+  transition: all .4s ease-in-out;
+}
+
+.intro{
+  color:#f3e3e0;
+}
+
+#title {
+  color: #f3e3e0;
+}
+
+#profile_pic {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* .card {
+  /* background-color: ; */
+
+.intro, .learning_card, .hobbies_card, .follow_card{
+  background-color: #506369;
+  box-shadow: 1px 4px 4px 1px #67777b;
+  padding: 10px 10px 20px 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 55%;
+  border-radius: 10px;
+}
+
+.card_container{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-content: center;
+  justify-items: stretch;
+  margin: 0;
+  padding: 0px 30px 0px 30px;
+}
+
+.item_learning, .item_hobbies{
+  /* background-color: #c1cac8; */
+  /* background-color: #afb9b7; */
+  list-style: none;
+  justify-self: center;
+  align-self: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.icon_container{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-column-gap: 1px;
+  justify-content: center;
+  justify-items: stretch;
+  margin: 0;
+  padding: 0px 30px 0px 30px;
+}
+
+.follow_icon {
+  list-style: none;
+  justify-self: center;
+  align-self: center;
+  padding: 1px 1px 1px 1px;
+  font-size: 20px;
+}
+
+#follow {
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+/* #follow{
+  margin-bottom: 30px;
+} */
+
+/* #learning, #hobbies {
+  background-color:#E1C8C4;
+} */
+
+/*
+Change the color & text-decoration of all the links
+Add hover effects to links using the pseudo-class a:hover. */
+
+a {
+  color:#98ABA7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f3f3f3;
+  transition: all .4s ease-in-out;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .intro, .learning_card, .hobbies_card, .follow_card {
+    width: 60%;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+   body {
+    font-size: 14px;
+  }
+  .intro, .learning_card, .hobbies_card, .follow_card {
+    width: 70%;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  body {
+    font-size: 13px;
+  }
+  .intro, .learning_card, .hobbies_card, .follow_card {
+    width: 75%;
+  }
+}
